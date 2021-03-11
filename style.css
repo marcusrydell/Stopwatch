@@ -26,9 +26,9 @@ body {
 }
 
 .buttons{
-    font-size: 2rem;
+    font-size: 4rem;
     
-   
+    
 }   
 .tag{
     color: rgb(216, 216, 216);
@@ -46,15 +46,25 @@ body {
 }
 
 #start{
-
+    border-radius: 100%;
+    background-color: rgb(8, 247, 8);
+    font-size: 2rem;
+    color: #fff;
+    
 }
 
 #stop{
-
+    border-radius: 100%;
+    background-color: rgb(255, 7, 7);
+    font-size: 2rem;    
+    color: #fff;
 }
 
 #reset{
-
+    border-radius: 100%;
+    background-color: rgb(241, 71, 3);
+    font-size: 2rem;    
+    color: #fff;
 }
 
 
