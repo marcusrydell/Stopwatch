@@ -9,11 +9,20 @@
 </head>
 <body>
     <div class="container">
-        
+        <div class="tag"><h1>OUR AMAZING STOPWATCH</h1></div>
         <div id="display">
-            <p>00:00:00</p>
+            <p id="time">00:00:00:00</p>
         </div>
-        <button id="startStop" onclick="startStop()"> Start </button>
+        <div class="buttons">
+            <button id="start" onclick="start()"> Start </button>
+            <button id="stop" onclick="stop()"> stop </button>
+            <button id="reset" onclick="reset()"> reset </button>
+        </div>
+   
     </div>
+    <script src="app.js"></script>
 </body>
+<footer>
+    <p>Sponsored by Faux ROLEX</p>
+</footer>
 </html>
