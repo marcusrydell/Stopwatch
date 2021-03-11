@@ -4,35 +4,6 @@ let displaySeconds, displayMinutes, displayHours, displayMs;
 let interval =null;
 
 
-//Initialize variables
-let seconds = 0, minutes = 0, hours = 0, ms=0;
-let displaySeconds, displayMinutes, displayHours, displayMs;
-let interval =null;
-
-    //track setInterval in variable for clearInterval to work
-    interval = setInterval(function(){
-        //logic to update time
-        ms++;
-        if(ms === 100){
-            ms =0;
-            seconds++;
-        
-        if(seconds === 60){
-            seconds = 0;
-            minutes ++
-            if(minutes === 60){
-                minutes = 0;
-                hours++;
-            }
-        }
-    }
-        //Format time before displaying
-        formatTime();
-        document.querySelector('#time').innerHTML = `${displayHours}:${displayMinutes}:${displaySeconds}:${displayMs}`;
-    },10);
-        
-
-
 //Call on start button
 function start(){
 
@@ -89,4 +60,9 @@ function formatTime(){
 function reset(){
     document.querySelector('#time').innerHTML = `00:00:00`;
     clearInterval(interval);
+    //
+    ms = 0;
+    seconds = 0;
+    minutes = 0;
+    hours = 0;
 }
