@@ -39,6 +39,7 @@ function start(){
 function stop(){
     clearInterval(interval);
     on = false;
+    document.querySelector(".message").innerHTML = "OOOOH! you are Naughty xx";
 }
 
 function formatTime(){
@@ -64,6 +65,7 @@ function formatTime(){
 
 function reset(){
     document.querySelector('#time').innerHTML = `00:00:00:00`;
+    document.querySelector(".message").innerHTML = "";
     clearInterval(interval);
     //
     ms = 0;
