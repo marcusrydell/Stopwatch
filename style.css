@@ -35,19 +35,19 @@ body {
     grid-template-rows: 1fr;
     grid-column-gap: 5rem;
     grid-row-gap: 2rem;
-    padding-top: 2rem;  
-}  
+    padding-top: 2rem; 
+	border: 0; 
+} 
 
 .tag{
     color: rgb(216, 216, 216);
     font-size: 1.3rem;
     text-decoration: underline;
     text-align: center;
-    margin-top: 5rem;
-    
+    margin-top: 5rem;    
 }
 
-#display {
+#display{
     font-family: 'Press Start 2P', cursive;
     color: rgb(6, 255, 6);
     background: radial-gradient(rgb(000, 100, 00), rgb(000, 50, 00));
@@ -61,7 +61,7 @@ body {
 	background:linear-gradient(to bottom, #77b55a 5%, #277500 100%);
 	border-radius:100%;
 	border:0;
-	display:inline-block;
+	/*display:inline-block;*/
 	cursor:pointer;
 	color:#ffffff;
 	font-family: 'Anton', sans-serif;;
@@ -69,10 +69,10 @@ body {
 	font-weight:bold;
 	padding:6px 12px;
 	text-decoration:none;
-	text-shadow:0px 1px 0px #030303;    
+	text-shadow:0px 1px 0px #030303; 
 }
 
-#start:hover {
+#start:hover{
 	background:linear-gradient(to bottom, #236900 5%, #39ad02 100%);
 	background-color:#72b352;
 }
@@ -83,7 +83,7 @@ body {
 	background:linear-gradient(to bottom, #bb0404 5%, #5c0101 100%);
 	border-radius:100%;
 	border:0;
-	display:inline-block;
+	/*display:inline-block;*/
 	cursor:pointer;
 	color:#ffffff;
 	font-family: 'Anton', sans-serif;;
@@ -93,7 +93,8 @@ body {
 	text-decoration:none;
 	text-shadow:0px 1px 0px #030303;
 }
-#stop:hover:hover {
+
+#stop:hover:hover{
 	background:linear-gradient(to bottom, #8d0000 5%, #ff0000 100%);
 	background-color:#72b352;
 }
@@ -105,7 +106,7 @@ body {
 	background:linear-gradient(to bottom, #ff6004 5%, #833501 100%);
 	border-radius:100%;
 	border:0;
-	display:inline-block;
+	/*display:inline-block;*/
 	cursor:pointer;
 	color:#ffffff;
 	font-family: 'Anton', sans-serif;
@@ -115,7 +116,8 @@ body {
 	text-decoration:none;
 	text-shadow:0px 1px 0px #030303;
 }
-#reset:hover {
+
+#reset:hover{
 	background:linear-gradient(to bottom, #863d00 5%, #ff5202 100%);	
 }
 
