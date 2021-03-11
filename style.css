@@ -27,12 +27,12 @@ body {
 
 .buttons{
     font-size: 2rem;
-    radius: 3rem;
+    
    
 }   
 .tag{
     color: rgb(216, 216, 216);
-    font-size: 2rem;
+    font-size: 1.3rem;
     text-decoration: underline;
     
 }
