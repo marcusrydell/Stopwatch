@@ -26,10 +26,38 @@ body {
 }
 
 .buttons{
-    display: flex;
-    flex-direction: row;
+    font-size: 2rem;
     
+   
 }   
-h1{
-    border: 10px solid red;
+.tag{
+    color: rgb(216, 216, 216);
+    font-size: 1.3rem;
+    text-decoration: underline;
+    
+}
+
+#display {
+    font-family: 'Press Start 2P', cursive;
+    color: rgb(6, 255, 6);
+    background: radial-gradient(rgb(000, 100, 00), rgb(000, 50, 00));
+    border: 2px solid rgb(0, 0, 0);
+    padding: 10px;
+}
+
+#start{
+
+}
+
+#stop{
+
+}
+
+#reset{
+
+}
+
+
+p{
+    color: white;
 }
