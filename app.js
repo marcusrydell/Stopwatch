@@ -3,10 +3,12 @@ let seconds = 0, minutes = 0, hours = 0, ms=0;
 let displaySeconds, displayMinutes, displayHours, displayMs;
 let interval =null;
 
+let on = false; 
 
 //Call on start button
-function start(){
-
+function start(){  
+    if(!on){
+        on = true;
     //track setInterval in variable for clearInterval to work
     interval = setInterval(function(){
         //logic to update time
@@ -28,12 +30,15 @@ function start(){
         formatTime();
         document.querySelector('#time').innerHTML = `${displayHours}:${displayMinutes}:${displaySeconds}:${displayMs}`;
     },10);
+    }
+
         
 }
 
 //duh
 function stop(){
     clearInterval(interval);
+    on = false;
 }
 
 function formatTime(){
@@ -58,7 +63,7 @@ function formatTime(){
 }
 
 function reset(){
-    document.querySelector('#time').innerHTML = `00:00:00`;
+    document.querySelector('#time').innerHTML = `00:00:00:00`;
     clearInterval(interval);
     //
     ms = 0;
@@ -66,3 +71,4 @@ function reset(){
     minutes = 0;
     hours = 0;
 }
+
