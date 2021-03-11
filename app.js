@@ -72,3 +72,26 @@ function reset(){
     hours = 0;
 }
 
+const robot = document.querySelector('.image');
+
+function moveRobot(){
+    let top=0;
+    let left=0;
+    let bottom=0;
+    let right=0;
+
+    setInterval(function(){
+        top = Math.random()*500;
+        bottom = Math.random()*500;
+        left = Math.random()*500;
+        right = Math.random()*500;
+
+
+        robot.style.marginTop = `${top}px`;
+        robot.style.marginBottom = `${bottom}px`;
+        robot.style.marginLeft = `${left}px`;
+        robot.style.marginRight = `${right}px`;
+    }, 5);
+}
+
+moveRobot();
