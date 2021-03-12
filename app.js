@@ -4,10 +4,14 @@ let displaySeconds, displayMinutes, displayHours, displayMs;
 let interval =null;
 
 let on = false; 
+const robot = document.querySelector('.image');
+
+
 
 //Call on start button
 function start(){  
     if(!on){
+        robot.classList.remove('hidden');
         on = true;
     //track setInterval in variable for clearInterval to work
     interval = setInterval(function(){
@@ -39,7 +43,22 @@ function start(){
 function stop(){
     clearInterval(interval);
     on = false;
-    document.querySelector(".message").innerHTML = "OOOOH! you are Naughty xx";
+
+    robot.classList.add('hidden')
+
+    let textArray = [
+        "OOOOH! you are Naughty xx",
+        "MY MY! What do we have here? xx",
+        "I do declare, it's getting rather hot in here. xx",
+        "What do i have to do, to get your number? xx",
+        "Can you help me practice my chat-up lines? xx",
+        "RESISTANCE IS FUTILE, get your coat xx",
+        "WOW! so fast, how can i keep up? xx",
+        "NOW! that is what i'm talking about mmmm mmmm xx",
+        "YUMMY! xx",
+    ];
+    document.querySelector(".message").innerHTML = textArray[Math.round(Math.random()*(textArray.length-1))];
+
 }
 
 function formatTime(){
@@ -74,3 +93,24 @@ function reset(){
     hours = 0;
 }
 
+
+function moveRobot(){
+    let top=0;
+    let left=0;
+    let bottom=0;
+    let right=0;
+
+    setInterval(function(){
+        top = Math.random()*50;
+        bottom = Math.random()*50;
+        left = Math.random()*50;
+        right = Math.random()*50;
+
+
+        robot.style.marginTop = `${-500}px`;
+        robot.style.marginLeft = `${left}px`;
+        robot.style.marginRight = `${right}px`;
+    }, 100);
+}
+
+moveRobot();
