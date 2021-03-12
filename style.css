@@ -22,6 +22,21 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: relative;
+    
+}
+.image {
+    position: absolute;
+    z-index: -1;
+    animation: rotation 5s infinite linear;
+}
+@keyframes rotation {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(359deg);
+	}
 }
 
 #time{
@@ -128,6 +143,10 @@ p{
     color: white;
 }
 
+
+.hidden{
+    visibility: hidden;
+
 .message{
     color: white;
 	font-family: 'Pacifico', sans-serif;
@@ -135,4 +154,5 @@ p{
 
 footer{
 	text-align:center;
+
 }
