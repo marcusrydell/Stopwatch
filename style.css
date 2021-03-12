@@ -72,7 +72,6 @@ body {
 }
 
 #start{
-<<<<<<< HEAD
     border-radius: 100%;
     background-color: rgb(19, 190, 19);
     font-size: 2rem;
@@ -80,85 +79,25 @@ body {
     text-shadow: 100px black;
     
     
-=======
-    box-shadow: 0px 10px 14px -7px #bbbbbb;
-	background:linear-gradient(to bottom, #77b55a 5%, #277500 100%);
-	border-radius:100%;
-	border:0;
-	/*display:inline-block;*/
-	cursor:pointer;
-	color:#ffffff;
-	font-family: 'Anton', sans-serif;;
-	font-size:2rem;
-	font-weight:bold;
-	padding:6px 12px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #030303; 
-	outline: none;
-}
-
-#start:hover{
-	background:linear-gradient(to bottom, #236900 5%, #39ad02 100%);
-	background-color:#72b352;
->>>>>>> f985f5ad6abfc988eaaf0736cd75c1a2e8091786
 }
 
 
 #stop{
-<<<<<<< HEAD
     border-radius: 100%;
     background-color: rgb(255, 7, 7);
     font-size: 2rem;    
     color: #fff;
     text-shadow: 100px black;
-=======
-    box-shadow: 0px 10px 14px -7px #bbbbbb;
-	background:linear-gradient(to bottom, #bb0404 5%, #5c0101 100%);
-	border-radius:100%;
-	border:0;
-	/*display:inline-block;*/
-	cursor:pointer;
-	color:#ffffff;
-	font-family: 'Anton', sans-serif;;
-	font-size:2rem;
-	font-weight:bold;
-	padding:6px 12px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #030303;
-	outline: none;
-}
-
-#stop:hover:hover{
-	background:linear-gradient(to bottom, #8d0000 5%, #ff0000 100%);
-	background-color:#72b352;
->>>>>>> f985f5ad6abfc988eaaf0736cd75c1a2e8091786
 }
 
 
 
 #reset{
-<<<<<<< HEAD
     border-radius: 100%;
     background-color: rgb(241, 71, 3);
     font-size: 2rem;    
     color: #fff;
     text-shadow: 100px black;
-=======
-    box-shadow: 0px 10px 14px -7px #bbbbbb;
-	background:linear-gradient(to bottom, #ff6004 5%, #833501 100%);
-	border-radius:100%;
-	border:0;
-	/*display:inline-block;*/
-	cursor:pointer;
-	color:#ffffff;
-	font-family: 'Anton', sans-serif;
-	font-size:2rem;
-	font-weight:bold;
-	padding:6px 12px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #030303;
-	outline: none;
->>>>>>> f985f5ad6abfc988eaaf0736cd75c1a2e8091786
 }
 
 #reset:hover{
@@ -175,6 +114,8 @@ p{
     visibility: hidden;
 
 }
+
+
 
 .message{
     color: white;
