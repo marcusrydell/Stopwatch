@@ -70,6 +70,7 @@ body {
 	padding:6px 12px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #030303; 
+	outline: none;
 }
 
 #start:hover{
@@ -92,6 +93,7 @@ body {
 	padding:6px 12px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #030303;
+	outline: none;
 }
 
 #stop:hover:hover{
@@ -115,6 +117,7 @@ body {
 	padding:6px 12px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #030303;
+	outline: none;
 }
 
 #reset:hover{

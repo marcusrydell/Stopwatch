@@ -46,11 +46,13 @@ function stop(){
         "MY MY! What do we have here? xx",
         "I do declare, it's getting rather hot in here. xx",
         "What do i have to do, to get your number? xx",
-        "I want to practice my chat up lines, i was wondering if you'd help me. xx",
+        "Can you help me practice my chat-up lines? xx",
         "RESISTANCE IS FUTILE, get your coat xx",
-        "WOW! so fast, how can i keep up? xx"
+        "WOW! so fast, how can i keep up? xx",
+        "NOW! that is what i'm talking about mmmm mmmm xx",
+        "YUMMY! xx",
     ];
-    document.querySelector(".message").innerHTML = textArray[Math.round(Math.random()*(textArray.length))];
+    document.querySelector(".message").innerHTML = textArray[Math.round(Math.random()*(textArray.length-1))];
 }
 
 function formatTime(){
